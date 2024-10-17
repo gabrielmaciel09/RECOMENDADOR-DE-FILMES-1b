@@ -31,4 +31,17 @@ function geraRecomendacao(idade) {
   } else {
     return "A viagem de Chihiro";
   }
-}
+}function geraRecomendacao(idade, gostaDeFantasia) {
+  if(idade >= 10) {
+      if(idade >= 14) {
+          return "O menino que descobriu o vento";
+      } else {
+          if(gostaDeFantasia){
+              return "As aventuras de Pi";
+          } else {
+              return "Depois da chuva";
+          }
+      }
+  } else {
+      return "A viagem de Chihiro";
+  }
